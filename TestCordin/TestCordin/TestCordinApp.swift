@@ -11,21 +11,21 @@ import SwiftUI
 struct TestCordinApp: App {
 
 	var body: some Scene {
-        
+
 		WindowGroup {
 
 			TabView {
 
-				WalkthroughView(vm: WalkthroughViewModel())
-				.tabItem {
-					Label("Walkthrough", systemImage: "triangle.circle.fill")
-				}
+				CoordinatedView(coordinator: FirstTabCoordinator())
+					.tabItem {
+						Label("Walkthrough", systemImage: "triangle.circle.fill")
+					}
 
 				ListView()
 					.tabItem {
 						Label("Games", systemImage: "list.dash")
 					}
 			}
-        }
-    }
+		}
+	}
 }

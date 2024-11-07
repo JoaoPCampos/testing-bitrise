@@ -15,6 +15,8 @@
 		C947F27B2CD3E1B900B3DFE7 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F27A2CD3E1B900B3DFE7 /* ForgotPasswordView.swift */; };
 		C947F27D2CD3E1C500B3DFE7 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F27C2CD3E1C500B3DFE7 /* SignupView.swift */; };
 		C947F27F2CD922E800B3DFE7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F27E2CD922E800B3DFE7 /* ListView.swift */; };
+		C947F2A22CDCD66300B3DFE7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F2A12CDCD66300B3DFE7 /* Coordinator.swift */; };
+		C947F2AA2CDD02F500B3DFE7 /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F2A92CDD02F500B3DFE7 /* FirstDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		C947F27A2CD3E1B900B3DFE7 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		C947F27C2CD3E1C500B3DFE7 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		C947F27E2CD922E800B3DFE7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C947F2A12CDCD66300B3DFE7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C947F2A92CDD02F500B3DFE7 /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				C947F2642CD3DC5F00B3DFE7 /* TestCordinApp.swift */,
 				C947F2682CD3DC6000B3DFE7 /* Assets.xcassets */,
 				C947F26A2CD3DC6000B3DFE7 /* Preview Content */,
+				C947F2A12CDCD66300B3DFE7 /* Coordinator.swift */,
+				C947F2A92CDD02F500B3DFE7 /* FirstDetailView.swift */,
 			);
 			path = TestCordin;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				C947F27D2CD3E1C500B3DFE7 /* SignupView.swift in Sources */,
 				C947F2652CD3DC5F00B3DFE7 /* TestCordinApp.swift in Sources */,
 				C947F2772CD3E17F00B3DFE7 /* WalkthroughView.swift in Sources */,
+				C947F2AA2CDD02F500B3DFE7 /* FirstDetailView.swift in Sources */,
+				C947F2A22CDCD66300B3DFE7 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
