@@ -7,7 +7,6 @@
 
 import Testing
 @testable import TestCordin
-@testable import RyukNetwork
 
 struct TestCordinTests {
 

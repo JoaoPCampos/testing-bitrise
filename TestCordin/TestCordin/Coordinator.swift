@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RyukNetwork
 
 protocol Coordinator: ObservableObject {
 
@@ -109,7 +108,7 @@ struct FirstView: View {
 
 			Button("call API") {
 
-				viewModel.callAPI()
+//				viewModel.callAPI()
 			}
 		}
 	}
@@ -119,7 +118,7 @@ final class FirstViewModel: ObservableObject {
 
 	@Published var coordinator: cenas
 
-	private let network: RyukNetworkContract
+//	private let network: RyukNetworkContract
 
 	deinit {
 		print("bye \(self)")
@@ -129,26 +128,26 @@ final class FirstViewModel: ObservableObject {
 		
 		self.coordinator = coordinator
 
-		self.network = RyukNetwork(baseURL: URL(string: "https://jsonplaceholder.typicode.com")!)
+//		self.network = RyukNetwork(baseURL: URL(string: "https://jsonplaceholder.typicode.com")!)
 
 		print("hi \(self)")
 	}
 
-	func callAPI() {
-
-		Task {
-			let resource = RyukNetworkResource(endpoint: "todos",
-											   method: .post,
-											   body: Todo(userId: 1, id: 1, title: "", completed: true))
-
-			do {
-				let result = try await network.request(type: Empty.self, with: resource)
-				print(result)
-			} catch {
-				print(error)
-			}
-		}
-	}
+//	func callAPI() {
+//
+//		Task {
+//			let resource = RyukNetworkResource(endpoint: "todos",
+//											   method: .post,
+//											   body: Todo(userId: 1, id: 1, title: "", completed: true))
+//
+//			do {
+//				let result = try await network.request(type: Empty.self, with: resource)
+//				print(result)
+//			} catch {
+//				print(error)
+//			}
+//		}
+//	}
 
 	func didTapButton() {
 		coordinator.goToDetailView()

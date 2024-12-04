@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,6 @@
 		C947F27F2CD922E800B3DFE7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F27E2CD922E800B3DFE7 /* ListView.swift */; };
 		C947F2A22CDCD66300B3DFE7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F2A12CDCD66300B3DFE7 /* Coordinator.swift */; };
 		C947F2AA2CDD02F500B3DFE7 /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F2A92CDD02F500B3DFE7 /* FirstDetailView.swift */; };
-		C95B52B02D00B4D800EB0F45 /* RyukNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = C95B52AF2D00B4D800EB0F45 /* RyukNetwork */; };
-		C9E235412CFD1E33002C7099 /* RyukNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = C9E235402CFD1E33002C7099 /* RyukNetwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95B52B02D00B4D800EB0F45 /* RyukNetwork in Frameworks */,
-				C9E235412CFD1E33002C7099 /* RyukNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +134,6 @@
 			);
 			name = TestCordin;
 			packageProductDependencies = (
-				C9E235402CFD1E33002C7099 /* RyukNetwork */,
-				C95B52AF2D00B4D800EB0F45 /* RyukNetwork */,
 			);
 			productName = TestCordin;
 			productReference = C947F2612CD3DC5F00B3DFE7 /* TestCordin.app */;
@@ -197,7 +191,6 @@
 			);
 			mainGroup = C947F2582CD3DC5F00B3DFE7;
 			packageReferences = (
-				C95B52AE2D00B4D800EB0F45 /* XCLocalSwiftPackageReference "../../ryuk-network-ios" */,
 			);
 			productRefGroup = C947F2622CD3DC5F00B3DFE7 /* Products */;
 			projectDirPath = "";
@@ -504,24 +497,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		C95B52AE2D00B4D800EB0F45 /* XCLocalSwiftPackageReference "../../ryuk-network-ios" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../ryuk-network-ios";
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C95B52AF2D00B4D800EB0F45 /* RyukNetwork */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RyukNetwork;
-		};
-		C9E235402CFD1E33002C7099 /* RyukNetwork */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RyukNetwork;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C947F2592CD3DC5F00B3DFE7 /* Project object */;
 }
