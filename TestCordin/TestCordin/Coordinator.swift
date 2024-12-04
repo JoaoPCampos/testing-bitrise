@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RyukNetwork
 
 protocol Coordinator: ObservableObject {
 
@@ -101,8 +102,14 @@ struct FirstView: View {
 	var body: some View {
 		VStack {
 			Text("First View")
-			Button("Go to detail") {
-				viewModel.didTapButton()
+			
+//			Button("Go to detail") {
+//				viewModel.didTapButton()
+//			}
+
+			Button("call API") {
+
+				viewModel.callAPI()
 			}
 		}
 	}
@@ -112,18 +119,52 @@ final class FirstViewModel: ObservableObject {
 
 	@Published var coordinator: cenas
 
-	deinit {
+	private let network: RyukNetworkContract
 
+	deinit {
 		print("bye \(self)")
 	}
 
 	init(coordinator: cenas) {
+		
 		self.coordinator = coordinator
 
+		self.network = RyukNetwork(baseURL: URL(string: "https://jsonplaceholder.typicode.com")!)
+
 		print("hi \(self)")
+	}
+
+	func callAPI() {
+
+		Task {
+			let resource = RyukNetworkResource(endpoint: "todos",
+											   method: .post,
+											   body: Todo(userId: 1, id: 1, title: "", completed: true))
+
+			do {
+				let result = try await network.request(type: Empty.self, with: resource)
+				print(result)
+			} catch {
+				print(error)
+			}
+		}
 	}
 
 	func didTapButton() {
 		coordinator.goToDetailView()
 	}
+
+	func didTapBack() {
+		coordinator.dismiss()
+	}
+}
+
+struct Empty: Codable {}
+
+struct Todo: Codable {
+
+	let userId: Int
+	let id: Int
+	let title: String
+	let completed: Bool
 }

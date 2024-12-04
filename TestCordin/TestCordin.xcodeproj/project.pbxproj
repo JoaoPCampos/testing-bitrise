@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,19 @@
 		C947F27F2CD922E800B3DFE7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F27E2CD922E800B3DFE7 /* ListView.swift */; };
 		C947F2A22CDCD66300B3DFE7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F2A12CDCD66300B3DFE7 /* Coordinator.swift */; };
 		C947F2AA2CDD02F500B3DFE7 /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947F2A92CDD02F500B3DFE7 /* FirstDetailView.swift */; };
+		C95B52B02D00B4D800EB0F45 /* RyukNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = C95B52AF2D00B4D800EB0F45 /* RyukNetwork */; };
+		C9E235412CFD1E33002C7099 /* RyukNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = C9E235402CFD1E33002C7099 /* RyukNetwork */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C95B52B92D00B58C00EB0F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C947F2592CD3DC5F00B3DFE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C947F2602CD3DC5F00B3DFE7;
+			remoteInfo = TestCordin;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C947F2612CD3DC5F00B3DFE7 /* TestCordin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCordin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,10 +43,24 @@
 		C947F27E2CD922E800B3DFE7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		C947F2A12CDCD66300B3DFE7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C947F2A92CDD02F500B3DFE7 /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
+		C95B52B52D00B58C00EB0F45 /* TestCordinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCordinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C95B52B62D00B58C00EB0F45 /* TestCordinTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TestCordinTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C947F25E2CD3DC5F00B3DFE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95B52B02D00B4D800EB0F45 /* RyukNetwork in Frameworks */,
+				C9E235412CFD1E33002C7099 /* RyukNetwork in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95B52B22D00B58C00EB0F45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C947F2632CD3DC5F00B3DFE7 /* TestCordin */,
+				C95B52B62D00B58C00EB0F45 /* TestCordinTests */,
 				C947F2622CD3DC5F00B3DFE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C947F2612CD3DC5F00B3DFE7 /* TestCordin.app */,
+				C95B52B52D00B58C00EB0F45 /* TestCordinTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,9 +137,36 @@
 			dependencies = (
 			);
 			name = TestCordin;
+			packageProductDependencies = (
+				C9E235402CFD1E33002C7099 /* RyukNetwork */,
+				C95B52AF2D00B4D800EB0F45 /* RyukNetwork */,
+			);
 			productName = TestCordin;
 			productReference = C947F2612CD3DC5F00B3DFE7 /* TestCordin.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C95B52B42D00B58C00EB0F45 /* TestCordinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95B52BB2D00B58C00EB0F45 /* Build configuration list for PBXNativeTarget "TestCordinTests" */;
+			buildPhases = (
+				C95B52B12D00B58C00EB0F45 /* Sources */,
+				C95B52B22D00B58C00EB0F45 /* Frameworks */,
+				C95B52B32D00B58C00EB0F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C95B52BA2D00B58C00EB0F45 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C95B52B62D00B58C00EB0F45 /* TestCordinTests */,
+			);
+			name = TestCordinTests;
+			packageProductDependencies = (
+			);
+			productName = TestCordinTests;
+			productReference = C95B52B52D00B58C00EB0F45 /* TestCordinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -120,11 +175,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					C947F2602CD3DC5F00B3DFE7 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					C95B52B42D00B58C00EB0F45 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C947F2602CD3DC5F00B3DFE7;
 					};
 				};
 			};
@@ -137,11 +196,15 @@
 				Base,
 			);
 			mainGroup = C947F2582CD3DC5F00B3DFE7;
+			packageReferences = (
+				C95B52AE2D00B4D800EB0F45 /* XCLocalSwiftPackageReference "../../ryuk-network-ios" */,
+			);
 			productRefGroup = C947F2622CD3DC5F00B3DFE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C947F2602CD3DC5F00B3DFE7 /* TestCordin */,
+				C95B52B42D00B58C00EB0F45 /* TestCordinTests */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +216,13 @@
 			files = (
 				C947F26C2CD3DC6000B3DFE7 /* Preview Assets.xcassets in Resources */,
 				C947F2692CD3DC6000B3DFE7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95B52B32D00B58C00EB0F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +244,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C95B52B12D00B58C00EB0F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C95B52BA2D00B58C00EB0F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C947F2602CD3DC5F00B3DFE7 /* TestCordin */;
+			targetProxy = C95B52B92D00B58C00EB0F45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C947F26D2CD3DC6000B3DFE7 /* Debug */ = {
@@ -352,6 +437,42 @@
 			};
 			name = Release;
 		};
+		C95B52BC2D00B58C00EB0F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jocs.TestCordinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCordin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCordin";
+			};
+			name = Debug;
+		};
+		C95B52BD2D00B58C00EB0F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jocs.TestCordinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCordin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCordin";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,7 +494,34 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C95B52BB2D00B58C00EB0F45 /* Build configuration list for PBXNativeTarget "TestCordinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95B52BC2D00B58C00EB0F45 /* Debug */,
+				C95B52BD2D00B58C00EB0F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C95B52AE2D00B4D800EB0F45 /* XCLocalSwiftPackageReference "../../ryuk-network-ios" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../ryuk-network-ios";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C95B52AF2D00B4D800EB0F45 /* RyukNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RyukNetwork;
+		};
+		C9E235402CFD1E33002C7099 /* RyukNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RyukNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C947F2592CD3DC5F00B3DFE7 /* Project object */;
 }
